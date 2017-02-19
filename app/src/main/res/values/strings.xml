@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RadPong</string>
+    <string name="title_activity_player_list">PlayerListActivity</string>
+</resources>

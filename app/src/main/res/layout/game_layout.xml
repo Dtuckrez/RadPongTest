@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Center-->
+    <LinearLayout
+        android:id="@+id/center_point"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" />
+
+    <!--Left-->
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/center_point"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_one_name_txt"
+            android:textSize="18sp" />
+
+        <!--Player Wins-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Wins"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/player_one_wins_txt"
+                android:background="@drawable/dark_border"
+                android:gravity="right"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+        <!--Forced Errors-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Forced Errors"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/player_one_forced_errors_txt"
+                android:background="@drawable/dark_border"
+                android:gravity="right"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+        <!--Unforced Errors-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Unforced Errors"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/player_one_unforced_errors_txt"
+                android:background="@drawable/dark_border"
+                android:gravity="right"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--Right-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/center_point"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:id="@+id/right_layout">
+
+        <TextView
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_two_name_txt"
+            android:textAlignment="textStart"
+            android:textSize="18sp" />
+
+        <!--Player Wins-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Wins"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/player_two_wins_txt"
+                android:background="@drawable/dark_border"
+                android:gravity="right"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+        <!--Forced Errors-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Forced Errors"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/player_two_forced_errors_txt"
+                android:background="@drawable/dark_border"
+                android:gravity="right"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+        <!--Unforced Errors-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Unforced Errors"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/player_two_unforced_errors_txt"
+                android:background="@drawable/dark_border"
+                android:gravity="right"
+                android:layout_gravity="bottom" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

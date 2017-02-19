@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tab_holder_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_dropdownitem_icon_width"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/player_stats_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/module_tab"
+            android:checked="false"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:text="Player"
+            android:textOn="Player"
+            android:textOff="Player" />
+
+        <ToggleButton
+            android:id="@+id/player_games_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/module_tab"
+            android:checked="false"
+            android:text="Games"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:textOff="Games"
+            android:textOn="Games" />
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/player_activity_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
